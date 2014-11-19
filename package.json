@@ -1,7 +1,7 @@
 {
     "name": "linea",
 	"description": "Generic command line interface.",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"author": "Guilherme Nunes",
 	"homepage": "http://gsnunes.com/",
 	"bin": {
