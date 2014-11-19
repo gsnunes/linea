@@ -7,5 +7,6 @@
 	"bin": {
 		"linea": "./bin/linea.js"
 	},
-	"preferGlobal": true
+	"preferGlobal": true,
+	"private": true
 }
