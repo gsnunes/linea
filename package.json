@@ -8,5 +8,5 @@
 		"linea": "./bin/linea.js"
 	},
 	"preferGlobal": true,
-	"private": true
+	"private": false
 }
