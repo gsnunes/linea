@@ -15,7 +15,7 @@ var fs = require('fs'),
 console.log(filePath);
 
 if (action && action === 'generate') {
-	if (type && type === 'widget') {
+	if (type) {
 		if (filePath) {
 			fs.mkdir(filePath, function (err) {
 				if(err) {
@@ -32,7 +32,7 @@ if (action && action === 'generate') {
 							nameSplited = filePath.split('\\');
 							name = nameSplited.length ? nameSplited[nameSplited.length - 1] : filePath;
 
-							fs.readFile(path.resolve(__dirname, '../template/widget/widget.js'), 'utf8', function (err, data) {
+							fs.readFile(path.resolve(__dirname, '../template/' + type + '/' + type + '.js'), 'utf8', function (err, data) {
 								if (err) {
 									return console.log(err);
 								}
@@ -49,7 +49,7 @@ if (action && action === 'generate') {
 								});
 							});
 
-							fs.readFile(path.resolve(__dirname, '../template/widget/widget.html'), 'utf8', function (err, data) {
+							fs.readFile(path.resolve(__dirname, '../template/' + type + '/' + type + '.html'), 'utf8', function (err, data) {
 								if (err) {
 									return console.log(err);
 								}
